@@ -12,4 +12,6 @@ It registers deliveries. If the customer has ordered several barrels of this bee
 
 It is also able to get customers based on the ID. Then, it returns name and all ordered/delivered barrels.
 
-The brewery wants to know their best customers. A method which sorts all cutomers by the number of ordered and delivered barrels. 
+The brewery wants to know their best customers and has a method which sorts all customers by the number of ordered and delivered barrels.
+
+It also wants to know how many days it takes between an order being placed and its delivery.

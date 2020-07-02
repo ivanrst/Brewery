@@ -10,4 +10,6 @@ It registers new orders and takes custemer ID, beer type and order date as param
 
 It registers deliveries. If the customer has ordered several barrels of this beer type, and these are not delivered yet. The brewery first delivers the order with the earliest order date. (FIFO principle  - First In First Out). 
 
-It is also able to get customers based on the ID. It returns name and all ordered/delivered barrels. 
+It is also able to get customers based on the ID. Then, it returns name and all ordered/delivered barrels.
+
+The brewery wants to know their best customers. A method which sorts all cutomers by the number of ordered and delivered barrels. 

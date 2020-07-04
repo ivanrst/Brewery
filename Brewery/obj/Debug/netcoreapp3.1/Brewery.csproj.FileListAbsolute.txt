@@ -7,3 +7,12 @@ C:\Users\ivanr\source\repos\Brewery\obj\Debug\netcoreapp3.1\Brewery.AssemblyInfo
 C:\Users\ivanr\source\repos\Brewery\obj\Debug\netcoreapp3.1\Brewery.AssemblyInfo.cs
 C:\Users\ivanr\source\repos\Brewery\obj\Debug\netcoreapp3.1\Brewery.dll
 C:\Users\ivanr\source\repos\Brewery\obj\Debug\netcoreapp3.1\Brewery.pdb
+C:\git\Brewery\Brewery\bin\Debug\netcoreapp3.1\Brewery.deps.json
+C:\git\Brewery\Brewery\bin\Debug\netcoreapp3.1\Brewery.dll
+C:\git\Brewery\Brewery\bin\Debug\netcoreapp3.1\Brewery.pdb
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.csprojAssemblyReference.cache
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.AssemblyInfoInputs.cache
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.AssemblyInfo.cs
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.csproj.CoreCompileInputs.cache
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.dll
+C:\git\Brewery\Brewery\obj\Debug\netcoreapp3.1\Brewery.pdb

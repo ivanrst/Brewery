@@ -16,20 +16,20 @@ namespace Brewery.Controller
         }
 
         // Customer orders a barrel of beer. 
-        public void CreateOrderBarrel(Guid id, BeerType beerType, DateTime orderDate)
+        public void CreateOrderBarrel(Guid id, BeerStyle beerStyle, DateTime orderDate)
         {
             var tempCustomer = customers.Where(o => o.Id == id).FirstOrDefault();
-            tempCustomer.OrderedBarrels.AddLast(new Barrel(tempCustomer, beerType, orderDate));
+            tempCustomer.OrderedBarrels.AddLast(new Barrel(tempCustomer, beerStyle, orderDate));
         }
 
         // Ordered barrels should be produced and delivered. 
-        // If the customer has ordered several barrels of this beer type and those are not delivered yet, the brewery must deliver the earliest order (FIFO principle - First In First Out)
-        public void CreateDeliveryBarrel(Guid id, BeerType beerType, DateTime deliveryDate)
+        // If the customer has ordered several barrels of this beer style and those are not delivered yet, the brewery must deliver the earliest order (FIFO principle - First In First Out)
+        public void CreateDeliveryBarrel(Guid id, BeerStyle beerStyle, DateTime deliveryDate)
         {
             var tempCustomer = customers.Where(o => o.Id == id).FirstOrDefault();
 
-            // We select ordered barrels of this beer type and sort these by ascending
-            LinkedList<Barrel> orderBarrels  = new LinkedList<Barrel>(tempCustomer.OrderedBarrels.Where(o => o.BeerType.Equals(beerType)).OrderBy(o => o.OrderDate));
+            // We select ordered barrels of this beer style and sort these by ascending
+            LinkedList<Barrel> orderBarrels  = new LinkedList<Barrel>(tempCustomer.OrderedBarrels.Where(o => o.BeerStyle.Equals(beerStyle)).OrderBy(o => o.OrderDate));
             
             // Get the barrel with the earliest order date and deliver it
             Barrel tempBarrel = orderBarrels.First.Value;
@@ -45,8 +45,8 @@ namespace Brewery.Controller
 
         public List<Customer> GetBestCustomers()
         {
-            // returns a list of customers sorted by ordered barrels
-            return customers.OrderByDescending(o => o.OrderedBarrels.Count).ToList();
+            // returns a list of customers sorted by ordered barrels + delivered barrels
+            return customers.OrderByDescending(o => o.OrderedBarrels.Count + o.DeliveredBarrels.Count).ToList();
         }
 
         // the longest time period in days between an order being placed and its delivery

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mTjkXw5QExE/pumObCqjsOw8GtxqSwX6bxoOaZ2cO39gurMOwfPkY0NjkKxau/JBTFkzkQTNEIDIaHjACdjafg==",
+  "dgSpecHash": "bEkYhY7XyDzqaUMiPa4FF8lKPTBfleLOot9pNOps2nR+IbH8GLTMSnqC/rlTeTzXHzSPjV7W/yHTqkoEVdmJog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj",
+  "projectFilePath": "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivanr\\.nuget\\packages\\microsoft.codecoverage\\16.6.1\\microsoft.codecoverage.16.6.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

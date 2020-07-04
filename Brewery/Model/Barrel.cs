@@ -8,17 +8,17 @@ namespace Brewery.Model
     {
         public Customer Customer { get; set; }
 
-        public BeerType BeerType { get; set; }
+        public BeerStyle BeerStyle { get; set; }
 
         public DateTime OrderDate { get; set; } 
 
         public DateTime DeliveryDate { get; set; }
 
-        public Barrel(Customer customer, BeerType beerType, DateTime orderDate)
+        public Barrel(Customer customer, BeerStyle beerStyle, DateTime orderDate)
         {
             Customer = customer;
 
-            BeerType = beerType;
+            BeerStyle = beerStyle;
 
             OrderDate = orderDate;
         }

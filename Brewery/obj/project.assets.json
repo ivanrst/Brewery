@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj",
+      "projectUniqueName": "C:\\git\\Brewery\\Brewery\\Brewery.csproj",
       "projectName": "Brewery",
-      "projectPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj",
+      "projectPath": "C:\\git\\Brewery\\Brewery\\Brewery.csproj",
       "packagesPath": "C:\\Users\\ivanr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\obj\\",
+      "outputPath": "C:\\git\\Brewery\\Brewery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

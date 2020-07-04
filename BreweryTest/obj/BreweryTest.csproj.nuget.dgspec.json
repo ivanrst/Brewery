@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj": {}
+    "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj": {
+    "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj",
+        "projectUniqueName": "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj",
         "projectName": "BreweryTest",
-        "projectPath": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj",
+        "projectPath": "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj",
         "packagesPath": "C:\\Users\\ivanr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\obj\\",
+        "outputPath": "C:\\git\\Brewery\\BreweryTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj": {
-                "projectPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj"
+              "C:\\git\\Brewery\\Brewery\\Brewery.csproj": {
+                "projectPath": "C:\\git\\Brewery\\Brewery\\Brewery.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj": {
+    "C:\\git\\Brewery\\Brewery\\Brewery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj",
+        "projectUniqueName": "C:\\git\\Brewery\\Brewery\\Brewery.csproj",
         "projectName": "Brewery",
-        "projectPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj",
+        "projectPath": "C:\\git\\Brewery\\Brewery\\Brewery.csproj",
         "packagesPath": "C:\\Users\\ivanr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\obj\\",
+        "outputPath": "C:\\git\\Brewery\\Brewery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

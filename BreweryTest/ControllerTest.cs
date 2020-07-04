@@ -25,28 +25,28 @@ namespace BreweryTest
             testController.customers.AddLast(new Customer("Adam", "Devine"));
 
             // ordered barrels
-            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerType.IPA, new DateTime(2012, 3, 31)));
-            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerType.IPA, new DateTime(2013, 11, 3)));
-            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerType.IPA, new DateTime(2014, 7, 20)));
+            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerStyle.IPA, new DateTime(2012, 3, 31)));
+            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerStyle.IPA, new DateTime(2013, 11, 3)));
+            testController.customers.ElementAt(0).OrderedBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerStyle.IPA, new DateTime(2014, 7, 20)));
 
             // delivered barrels
-            testController.customers.ElementAt(0).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerType.IPA, new DateTime(2011, 6, 10)));
+            testController.customers.ElementAt(0).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(0), BeerStyle.IPA, new DateTime(2011, 6, 10)));
             testController.customers.ElementAt(0).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2011, 6, 11);
-            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerType.IPA, new DateTime(2011, 3, 31)));
+            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerStyle.IPA, new DateTime(2011, 3, 31)));
             testController.customers.ElementAt(1).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2011, 4, 2);
-            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerType.Lager, new DateTime(2011, 4, 2)));
+            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerStyle.Lager, new DateTime(2011, 4, 2)));
             testController.customers.ElementAt(1).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2011, 4, 3);
-            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerType.Pilsner, new DateTime(2013, 1, 6)));
+            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerStyle.Pilsner, new DateTime(2013, 1, 6)));
             testController.customers.ElementAt(1).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2013, 6, 5);
-            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerType.Stout, new DateTime(2015, 7, 10)));
+            testController.customers.ElementAt(1).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(1), BeerStyle.Stout, new DateTime(2015, 7, 10)));
             testController.customers.ElementAt(1).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2015, 7, 12);
-            testController.customers.ElementAt(2).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(2), BeerType.IPA, new DateTime(2010, 2, 5)));
+            testController.customers.ElementAt(2).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(2), BeerStyle.IPA, new DateTime(2010, 2, 5)));
             testController.customers.ElementAt(2).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2010, 2, 6);
-            testController.customers.ElementAt(2).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(2), BeerType.Stout, new DateTime(2014, 10, 31)));
+            testController.customers.ElementAt(2).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(2), BeerStyle.Stout, new DateTime(2014, 10, 31)));
             testController.customers.ElementAt(2).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2014, 11, 2);
-            testController.customers.ElementAt(3).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(3), BeerType.Pilsner, new DateTime(2015, 3, 17)));
+            testController.customers.ElementAt(3).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(3), BeerStyle.Pilsner, new DateTime(2015, 3, 17)));
             testController.customers.ElementAt(3).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2015, 3, 18);
-            testController.customers.ElementAt(4).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(4), BeerType.Lager, new DateTime(2011, 1, 2)));
+            testController.customers.ElementAt(4).DeliveredBarrels.AddLast(new Barrel(testController.customers.ElementAt(4), BeerStyle.Lager, new DateTime(2011, 1, 2)));
             testController.customers.ElementAt(4).DeliveredBarrels.Last.Value.DeliveryDate = new DateTime(2011, 1, 4);
         }
 
@@ -113,11 +113,11 @@ namespace BreweryTest
             Customer tempCustomer = testController.customers.ElementAt(i);
             int orderedBarrelsBefore = tempCustomer.OrderedBarrels.Count;
             int deliveredBarrelsBefore = tempCustomer.DeliveredBarrels.Count;
-            BeerType type = BeerType.Pilsner;
+            BeerStyle style = BeerStyle.Pilsner;
             DateTime orderDate = DateTime.Today;
 
             // Act
-            testController.CreateOrderBarrel(tempCustomer.Id, type, orderDate);
+            testController.CreateOrderBarrel(tempCustomer.Id, style, orderDate);
 
             // Assert
             Assert.IsTrue((tempCustomer.OrderedBarrels.Count - orderedBarrelsBefore) == 1);
@@ -131,11 +131,11 @@ namespace BreweryTest
             Customer tempCustomer = testController.customers.ElementAt(0);
             int deliveredBarrelsBefore = tempCustomer.DeliveredBarrels.Count;
             int orderedBarrelsBefore = tempCustomer.OrderedBarrels.Count;
-            BeerType type = BeerType.IPA;
+            BeerStyle style = BeerStyle.IPA;
             DateTime deliveryDate = new DateTime(2014, 9, 1);
 
             // Act
-            testController.CreateDeliveryBarrel(tempCustomer.Id, type, deliveryDate);
+            testController.CreateDeliveryBarrel(tempCustomer.Id, style, deliveryDate);
 
             // Assert
             Assert.IsTrue((tempCustomer.DeliveredBarrels.Count - deliveredBarrelsBefore) == 1);
@@ -166,7 +166,7 @@ namespace BreweryTest
             // Assert
             foreach (var item in bestCustomers)
             {
-                Assert.IsTrue(bestCustomers[0].OrderedBarrels.Count >= item.OrderedBarrels.Count);
+                Assert.IsTrue(bestCustomers[0].OrderedBarrels.Count + bestCustomers[0].DeliveredBarrels.Count >= item.OrderedBarrels.Count + item.DeliveredBarrels.Count);
             }
 
         }

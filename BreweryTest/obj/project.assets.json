@@ -4596,11 +4596,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj",
+      "projectUniqueName": "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj",
       "projectName": "BreweryTest",
-      "projectPath": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\BreweryTest.csproj",
+      "projectPath": "C:\\git\\Brewery\\BreweryTest\\BreweryTest.csproj",
       "packagesPath": "C:\\Users\\ivanr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanr\\source\\repos\\BreweryTest\\obj\\",
+      "outputPath": "C:\\git\\Brewery\\BreweryTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4621,8 +4621,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj": {
-              "projectPath": "C:\\Users\\ivanr\\source\\repos\\Brewery\\Brewery.csproj"
+            "C:\\git\\Brewery\\Brewery\\Brewery.csproj": {
+              "projectPath": "C:\\git\\Brewery\\Brewery\\Brewery.csproj"
             }
           }
         }
